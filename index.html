@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saravana Kumar A — Student Portfolio</title>
+  <meta name="description" content="Saravana Kumar A | ECE Student • VLSI & Embedded Systems • IoT • Photography" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">SaravanaK</a>
+
+      <nav class="nav" id="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-resume" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Hi, I’m <span class="accent">Saravana Kumar A</span></h1>
+          <p class="lead">ECE Student | VLSI & Embedded Systems Enthusiast</p>
+          <p class="tag">“Designing smart systems that make technology think.”</p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="quick-info">
+            <li><strong>College:</strong> Chettinad College of Engineering & Technology</li>
+            <li><strong>Internship:</strong> Taras Systems & Solutions</li>
+          </ul>
+        </div>
+
+        <div class="hero-right card">
+          <div class="profile-photo" aria-hidden="true">
+            <!-- placeholder gradient; replace with your photo -->
+            <div class="photo-placeholder">Your Photo</div>
+          </div>
+
+          <div class="mini-stats">
+            <div><strong>3</strong><span>Major Projects</span></div>
+            <div><strong>2</strong><span>Internships</span></div>
+            <div><strong>Inspiring Shadow</strong><span>YouTube</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p>I’m Saravana Kumar, a final-year Electronics and Communication Engineering student at Chettinad College of Engineering and Technology. I’m passionate about Embedded Systems, IoT, and VLSI Design. I enjoy creating innovative and real-time hardware projects that merge creativity with precision to solve real-world challenges.</p>
+
+            <ul class="about-list">
+              <li><strong>Interests:</strong> VLSI, Embedded Systems, IoT, Photography, Storytelling</li>
+              <li><strong>Tools:</strong> Arduino, ESP8266, 8051, Vivado, ModelSim, MATLAB</li>
+              <li><strong>Languages:</strong> Verilog, SystemVerilog, C, Python</li>
+            </ul>
+          </div>
+
+          <div class="tech-card card">
+            <h3>Quick Tech Snapshot</h3>
+            <div class="tech-tags">
+              <span>Verilog</span><span>SystemVerilog</span><span>ESP8266</span><span>MATLAB</span><span>Arduino</span>
+            </div>
+            <p class="muted">Want detailed project descriptions and code? Check Projects below or download my resume.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Programming</h4>
+            <div class="skill-bar"><div style="width:86%"></div></div>
+            <p class="muted">Verilog, SystemVerilog, C, Python</p>
+          </div>
+
+          <div class="skill">
+            <h4>Hardware</h4>
+            <div class="skill-bar"><div style="width:82%"></div></div>
+            <p class="muted">Arduino, ESP8266, 8051, Sensors (MPU6050, Moisture, Servo)</p>
+          </div>
+
+          <div class="skill">
+            <h4>Simulation & Tools</h4>
+            <div class="skill-bar"><div style="width:78%"></div></div>
+            <p class="muted">MATLAB, ModelSim, Xilinx ISE, Multisim, EDA Playground, Wokwi</p>
+          </div>
+
+          <div class="skill">
+            <h4>Firmware & Protocols</h4>
+            <div class="skill-bar"><div style="width:74%"></div></div>
+            <p class="muted">I2C, SPI, CAN, Embedded C, Arduino IDE</p>
+          </div>
+        </div>
+
+        <div class="skills-grid mt-12">
+          <div class="skill">
+            <h4>Creative</h4>
+            <div class="skill-bar"><div style="width:70%"></div></div>
+            <p class="muted">Photography, Video Editing — CapCut, VN Editor, Premiere (basic)</p>
+          </div>
+
+          <div class="skill">
+            <h4>Soft Skills</h4>
+            <div class="skill-bar"><div style="width:85%"></div></div>
+            <p class="muted">Teamwork, Problem-Solving, Leadership, Creativity</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card card reveal" data-tech="ESP8266, MPU6050, MATLAB">
+            <div class="project-thumb">AeroGuard</div>
+            <div class="project-body">
+              <h3>AeroGuard — Real-Time Missile-Inspired Stabilization</h3>
+              <p>Designed an intelligent fin stabilization system inspired by missile dynamics using ESP8266 and MPU6050. Implemented PID control for real-time angle correction and wireless data visualization using MATLAB.</p>
+              <div class="meta"><strong>Tech:</strong> ESP8266, MPU6050, MATLAB, Arduino IDE, Embedded C</div>
+              <div class="project-actions">
+                <button class="btn small" data-modal="modal1">Details</button>
+                <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card card reveal" data-tech="Arduino, Servo, Soil Moisture">
+            <div class="project-thumb">Smart Bridge</div>
+            <div class="project-body">
+              <h3>Smart Bridge using Arduino</h3>
+              <p>A flood-aware smart bridge that automatically lifts during high water levels using servo motor and soil moisture sensor. Built Sep 2023 – Oct 2023.</p>
+              <div class="meta"><strong>Tech:</strong> Arduino, Servo Motor, Soil Moisture Sensor</div>
+              <div class="project-actions">
+                <button class="btn small" data-modal="modal2">Details</button>
+                <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card reveal" data-tech="Verilog, Xilinx ISE">
+            <div class="project-thumb">Vedic Multiplier</div>
+            <div class="project-body">
+              <h3>Low Power High-Performance Vedic Multiplier</h3>
+              <p>Designed and simulated a power-efficient 4-bit Vedic multiplier using Verilog to optimize both speed and power consumption. (Sep 2024 – Oct 2024)</p>
+              <div class="meta"><strong>Tech:</strong> Verilog, Xilinx ISE</div>
+              <div class="project-actions">
+                <button class="btn small" data-modal="modal3">Details</button>
+                <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Creative — Gallery</h2>
+        <p class="muted">A few photography & short film stills. (Replace placeholders with your photos.)</p>
+
+        <div class="gallery-grid">
+          <div class="photo card">Photo 1</div>
+          <div class="photo card">Photo 2</div>
+          <div class="photo card">Photo 3</div>
+          <div class="photo card">Photo 4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p>Interested in collaborating or have a placement opportunity? Drop a message.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:saravanakumar12445@gmail.com">saravanakumar12445@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/saravana-kumar-4371a3329" target="_blank">linkedin.com/in/saravana-kumar-4371a3329</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Saravana1244" target="_blank">github.com/Saravana1244</a></li>
+            <li><strong>YouTube:</strong> <a href="https://youtube.com/InspiringShadow" target="_blank">Inspiring Shadow</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" onsubmit="return false;">
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="message" placeholder="Tell me about the opportunity..." rows="6" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" id="send-btn" type="button">Send Message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+          <p id="form-status" class="muted" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Saravana Kumar A — Built with ❤️ • ECE Student</p>
+    </div>
+  </footer>
+
+  <!-- Project modals (simple) -->
+  <div id="modal1" class="modal" aria-hidden="true">
+    <div class="modal-body card">
+      <button class="modal-close" data-close>✕</button>
+      <h3>AeroGuard — Details</h3>
+      <p>Ongoing project: PID-based stabilization using MPU6050 feedback, ESP8266 for telemetry and wireless visualization in MATLAB. Focus: real-time corrections, tuning and data logging.</p>
+      <pre class="code-block">// pseudo example: PID correction
+error = targetAngle - currentAngle;
+control = Kp*error + Ki*sumError + Kd*(error - prevError);
+apply_control(control);</pre>
+      <p class="muted">Want the full Arduino/ESP code or MATLAB plotting scripts? I can attach them.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal" aria-hidden="true">
+    <div class="modal-body card">
+      <button class="modal-close" data-close>✕</button>
+      <h3>Smart Bridge — Details</h3>
+      <p>Sep 2023 – Oct 2023: Uses water/soil sensors to detect rising levels and control a servo-driven bridge mechanism. Includes fail-safe logic and manual override.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal" aria-hidden="true">
+    <div class="modal-body card">
+      <button class="modal-close" data-close>✕</button>
+      <h3>Vedic Multiplier — Details</h3>
+      <p>Sep 2024 – Oct 2024: 4-bit Vedic multiplier implemented in Verilog and simulated in Xilinx ISE with power optimization techniques.</p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
