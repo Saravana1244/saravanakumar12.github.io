@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Saravanakumar A — VLSI & Embedded Systems Portfolio</title>
-  <meta name="description" content="Saravanakumar A | ECE Student • VLSI & Embedded Systems • IoT • Photography" />
+  <meta name="description" content="Saravanakumar A | ECE Student • VLSI & Embedded Systems • IoT" />
 
   <!-- Google Font: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -25,10 +25,10 @@
 
       <nav class="nav" id="main-nav">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#internships">Internships</a>
+        <a href="#experience">Qualifications</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#gallery">Creative</a>
         <a href="#contact">Contact</a>
         <a class="btn-resume" href="assets/Saravanakumar_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Resume</a>
       </nav>
@@ -44,23 +44,23 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <h1>Hi, I’m <span class="accent">Saravana Kumar </span></h1>
-          <p class="lead">ECE Student | VLSI & Embedded Systems Enthusiast</p>
-          <p class="tag">“Designing smart systems that make technology think.”</p>
+          <h1 class="reveal">Hi, I’m <span class="accent">Saravana Kumar </span></h1>
+          <p class="lead reveal">ECE Student | VLSI & Embedded Systems Enthusiast</p>
+          <p class="tag reveal">“Designing smart systems that make technology think.”</p>
 
-          <div class="hero-ctas">
+          <div class="hero-ctas reveal">
             <a class="btn primary" href="#projects"><i class="fas fa-lightbulb"></i> See Projects</a>
             <a class="btn ghost" href="#contact"><i class="fas fa-paper-plane"></i> Contact Me</a>
           </div>
 
-          <ul class="quick-info">
+          <ul class="quick-info reveal">
             <li><i class="fas fa-university"></i> <strong>College:</strong> Chettinad College of Engineering & Technology</li>
             <li><i class="fas fa-briefcase"></i> <strong>Internship:</strong> Taras Systems & Solutions</li>
           </ul>
         </div>
 
         <!-- Corrected Profile Photo Structure -->
-        <div class="hero-right card">
+        <div class="hero-right card reveal profile-photo-glow">
           <div class="profile-photo" aria-hidden="true">
             <!-- Fallback placeholder image used since the local asset isn't accessible -->
             <img src="https://placehold.co/420x240/07111a/00b7ff?text=Saravana+Kumar" onerror="this.onerror=null; this.src='assets/1758780078540.jpg';" alt="A photo of me">
@@ -77,10 +77,10 @@
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title"><i class="fas fa-user-circle accent"></i> About Me</h2>
+        <h2 class="section-title reveal"><i class="fas fa-user-circle accent"></i> About Me</h2>
         <div class="about-grid">
-          <div>
-            <p>I’m SaravanaKumar, a final-year Electronics and Communication Engineering student at Chettinad College of Engineering and Technology. I’m passionate about VLSI Design, Embedded Systems and IoT. I enjoy creating innovative and real-time hardware projects that merge creativity with precision to solve real-world challenges.</p>
+          <div class="reveal">
+            <p>I’m SaravanaKumar, a final-year Electronics and Communication Engineering student at Chettinad College of Engineering and Technology. I’m passionate about **VLSI Design, Embedded Systems and IoT**. I enjoy creating innovative and real-time hardware projects that merge creativity with precision to solve real-world challenges.</p>
 
             <ul class="about-list">
               <li><i class="fas fa-heart"></i> <strong>Interests:</strong> VLSI, Embedded Systems, IoT, Photography, Storytelling</li>
@@ -100,55 +100,74 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE, ACHIEVEMENTS, CERTIFICATIONS (Split into 3 distinct columns) -->
-    <section id="experience" class="section alt">
+    <!-- INTERNSHIPS (Dedicated Section) -->
+    <section id="internships" class="section alt">
       <div class="container">
-        <h2 class="section-title"><i class="fas fa-graduation-cap accent"></i> Experience & Qualifications</h2>
+        <h2 class="section-title reveal"><i class="fas fa-briefcase accent"></i> Professional Internships</h2>
 
-        <div class="experience-grid split-3">
-          <!-- Column 1: Internships -->
-          <div class="exp-card card reveal">
-            <h3><i class="fas fa-briefcase"></i> Internships</h3>
-            <div class="exp-item">
-              <h4>VLSI Design Intern</h4>
-              <p class="company">Taras Systems & Solutions, Coimbatore <span class="muted">(Jul 2025 – Aug 2025, Offline)</span></p>
+        <div class="projects-grid">
+          <!-- Internship 1: VLSI Design & Verification Intern, Bangalore (6 Months) -->
+          <article class="project-card card reveal project-blinking-border" data-tech="Verilog, SystemVerilog, UVM">
+            <div class="project-thumb"><i class="fas fa-bolt"></i> Online VLSI Design & Verification</div>
+            <div class="project-body">
+              <h3>Taras Systems & Solutions, Bangalore</h3>
+              <p>Completed a 6-month intensive online program focusing on **VLSI Design and Verification**. Gained hands-on experience in **Verilog, SystemVerilog, and UVM** for RTL design and functional verification. Improved understanding of the VLSI design flow through structured sessions and project-based learning.</p>
+              <div class="meta"><strong>Focus:</strong> Digital Design Flow, RTL/Verification, Simulation Methodologies</div>
+              <p class="muted">Dec 2024 – Jun 2025</p>
             </div>
-            <div class="exp-item">
-              <h4>VLSI Design & Verification Intern</h4>
-              <p class="company">Taras Systems & Solutions, Bangalore <span class="muted">(Dec 2024 – Jun 2025, Online)</span></p>
-            </div>
-          </div>
+          </article>
 
-          <!-- Column 2: Achievements -->
+          <!-- Internship 2: VLSI Intern, Coimbatore (1 Month) -->
+          <article class="project-card card reveal project-blinking-border" data-tech="Digital Electronics, Verilog, C">
+            <div class="project-thumb"><i class="fas fa-code-branch"></i> Offline VLSI Design</div>
+            <div class="project-body">
+              <h3>Taras Systems & Solutions, Coimbatore</h3>
+              <p>Gained hands-on experience in **Digital Electronics fundamentals** and design flow. Practiced coding in **Verilog** for logic design and simulation, enhancing programming proficiency in C related to hardware description.</p>
+              <div class="meta"><strong>Focus:</strong> Digital Logic, Verilog Coding, Real-World VLSI Principles</div>
+              <p class="muted">Jul 2025 – Aug 2025</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (Achievements and Certifications Combined) -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><i class="fas fa-award accent"></i> Achievements & Certifications</h2>
+
+        <div class="experience-grid split-2">
+          <!-- Column 1: Achievements -->
           <div class="exp-card card reveal">
             <h3><i class="fas fa-trophy"></i> Key Achievements</h3>
             <ul class="achievements-list">
-              <li>Awarded Robotics Starter Kit by AMD for AI-powered Electric Scooter project</li>
-              <li>Secured 3rd Prize in Inter-College Mini Project Expo for Vedic Multiplier</li>
-              <li>Conducted Technical Quiz Event for ECE juniors</li>
-              <li>Represented college in RBI Regional Quiz Competition</li>
+              <li>Awarded Robotics Starter Kit by AMD for **AI-powered Electric Scooter** project.</li>
+              <li>Secured 3rd Prize in Inter-College Mini Project Expo for **Vedic Multiplier**.</li>
+              <li>Conducted Technical Quiz Event for ECE juniors.</li>
+              <li>Represented college in **RBI Regional Quiz Competition**.</li>
             </ul>
           </div>
 
-          <!-- Column 3: Certifications -->
+          <!-- Column 2: Certifications -->
           <div class="exp-card card reveal">
             <h3><i class="fas fa-certificate"></i> Certifications & Workshops</h3>
             <ul class="achievements-list">
-              <li>AMD AI Challenge Workshop — Shooting Stars Foundation</li>
-              <li>Vehicular AD-HOC Networks by Netsim Workshop TETCOS LLP, Bangalore.</li>
-              <li>Page to Stage & Clash of Logos in National Level Symposium Anna University Regional Campus, Coimbatore.</li>
-              <li>Paper Presentation in National Level Technical Symposium Coimbatore Institute of Technology, Coimbatore.</li>
+              <li>**AMD AI Challenge Workshop** — Shooting Stars Foundation.</li>
+              <li>**Vehicular AD-HOC Networks** by Netsim - TETCOS LLP, Bangalore.</li>
+              <li>**Page to Stage & Clash of Logos** in National Level Symposium (Anna University Regional Campus).</li>
+              <li>Paper Presentation in National Level Technical Symposium (Coimbatore Institute of Technology).</li>
+              <li>**VLSI Course Level-1** — 1-week hands-on training at Taras Solutions.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- END SPLIT EXPERIENCE SECTION -->
-
+    
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills" class="section alt">
       <div class="container">
-        <h2 class="section-title"><i class="fas fa-brain accent"></i> Technical Skills</h2>
+        <h2 class="section-title reveal"><i class="fas fa-brain accent"></i> Technical Skills</h2>
         <div class="skills-grid">
           <div class="skill reveal">
             <h4>Programming / HDL</h4>
@@ -193,9 +212,9 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section alt">
+    <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title"><i class="fas fa-laptop-code accent"></i>Projects</h2>
+        <h2 class="section-title reveal"><i class="fas fa-laptop-code accent"></i> Major Projects</h2>
 
         <div class="projects-grid">
           <!-- Project 1 -->
@@ -239,21 +258,6 @@
               </div>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery" class="section">
-      <div class="container">
-        <h2 class="section-title"><i class="fas fa-camera accent"></i> Creative — Gallery</h2>
-        <p class="muted">A few photography & short film stills. (Replace placeholders with your photos.)</p>
-
-        <div class="gallery-grid">
-          <div class="photo card reveal">Photo 1</div>
-          <div class="photo card reveal">Photo 2</div>
-          <div class="photo card reveal">Photo 3</div>
-          <div class="photo card reveal">Photo 4</div>
         </div>
       </div>
     </section>
@@ -336,4 +340,3 @@ apply_control(control);</pre>
   <script src="script.js"></script>
 </body>
 </html>
-
