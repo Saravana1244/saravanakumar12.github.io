@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // 2. Mobile navigation toggle
   const navToggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('main-nav');
-  navToggle.addEventListener('click', () => {
-    // CSS classes 'open' handle the display and animation for mobile menu
-    nav.classList.toggle('open');
-    navToggle.classList.toggle('open');
-  });
+  if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+          // CSS classes 'open' handle the display and animation for mobile menu
+          nav.classList.toggle('open');
+          navToggle.classList.toggle('open');
+      });
+  }
 
   // 3. Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -24,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         
         // Close nav after clicking a link on mobile
-        if (nav.classList.contains('open')) {
+        if (nav && nav.classList.contains('open')) {
           nav.classList.remove('open');
-          navToggle.classList.remove('open');
+          if (navToggle) navToggle.classList.remove('open');
         }
       }
     });
@@ -80,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
           if (!name || !email || !message) {
               status.textContent = 'Please fill all fields.';
+              status.style.color = 'red';
               return;
           }
 
